@@ -1,0 +1,88 @@
+@use "../themes" as *;
+
+footer {
+  background-color: #021934;
+  padding: 80px 0 40px;
+  .footer-content {
+    .foot_cards {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 32px;
+      .foot_card {
+        p {
+          max-width: 500px;
+          color: $color-six;
+          padding-top: 36px;
+        }
+        .foot-items {
+          max-width: 139px;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 8px;
+          flex-direction: column;
+          h6 {
+            color: $color-six;
+            font-variant-numeric: lining-nums proportional-nums;
+
+            /* Heading/Reguler/H5 - 24px */
+            font-family: Rubik;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 133.333% */
+          }
+          a {
+            color: $color-six;
+
+            /* Paragraph/Semibold/Body - 16px */
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+          }
+        }
+      }
+    }
+    .foot-content-cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 80px;
+      gap: 50px;
+      .foot-content-card {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        p {
+          color: $color-six;
+
+          /* Paragraph/Reguler/Body - 16px */
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27px; /* 168.75% */
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 777px) {
+    .foot-content-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  @media only screen and (max-width: 357px) {
+    .foot-content-card {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}

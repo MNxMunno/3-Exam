@@ -1,0 +1,234 @@
+@use "../layout" as *;
+@use "../themes" as *;
+
+.courses-hero {
+  padding-top: 16px;
+
+  .courses-hero-content {
+    h1 {
+      color: $color-one;
+
+      /* Heading/Bold/H2 - 64px */
+      font-family: Rubik;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 88px; /* 137.5% */
+      padding-top: 24px;
+    }
+    .hero-title {
+      max-width: 712px;
+      color: $color-two;
+
+      /* Paragraph/Reguler/Body - 16px */
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px; /* 168.75% */
+      padding: 26px 0 56px;
+    }
+    h2 {
+      color: $color-one;
+      font-variant-numeric: lining-nums proportional-nums;
+
+      /* Heading/Bold/H4 - 32px */
+      font-family: Rubik;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 150% */
+      text-transform: capitalize;
+      padding-bottom: 32px;
+    }
+    .title-hero {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: $color-one;
+
+      /* Paragraph/Semibold/Body - 16px */
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 200% */
+      a {
+        color: $color-two;
+
+        /* Paragraph/Semibold/Body - 16px */
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 200% */
+      }
+    }
+    .hero_cards {
+      .hero_card {
+        margin-bottom: 160px;
+      }
+    }
+  }
+  @media only screen and (max-width: 777px) {
+    .courses-hero-content {
+      h1 {
+        font-size: 32px;
+        line-height: 45px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.courses-about {
+  padding-bottom: 160px;
+  .courses_about-content {
+    .a-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      h5 {
+        color: $color-one;
+        font-variant-numeric: lining-nums proportional-nums;
+
+        /* Heading/Bold/H3 - 48px */
+        font-family: Rubik;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 63.984px; /* 133.3% */
+      }
+      a {
+        background-color: $color-four;
+        border-radius: 8px;
+        padding: 14px 76px;
+        color: $color-five;
+        text-align: center;
+
+        /* Paragraph/Bold/Body - 16px */
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 200% */
+        transition: 0.4s;
+      }
+      a:hover {
+        background-color: #d11d6e;
+        color: #d1cece;
+      }
+    }
+    .courses_about_cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-top: 56px;
+      .about_card {
+        width: 296px;
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+        h4 {
+          position: absolute;
+          bottom: 40px;
+          left: 50px;
+          color: $color-five;
+          font-variant-numeric: lining-nums proportional-nums;
+          text-align: center;
+          /* Heading/Bold/H5 - 24px */
+          font-family: Rubik;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px; /* 133.333% */
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 888px) {
+    .about-content {
+      .a-content {
+        h5 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .about-content {
+      .a-content {
+        h5 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 555px) {
+    .about-content {
+      .a-content {
+        h5 {
+          font-size: 22px;
+        }
+        a {
+          padding: 6px 28px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .about-content {
+      .a-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        h5 {
+          font-size: 18px;
+        }
+        a {
+          padding: 6px 28px;
+        }
+      }
+    }
+  }
+}
+
+.courses-product {
+  padding-bottom: 160px;
+  .product-contents {
+    .product-content {
+      display: grid;
+      grid-template-columns: 4fr 8fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      .content-card1 {
+        background: #aaa;
+        border-right: 1px solid $color-six;
+      }
+      .content-card {
+        padding: 0 46px;
+        .courses_product_cards {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          flex-wrap: wrap;
+          .courses_product_card {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

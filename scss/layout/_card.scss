@@ -1,0 +1,173 @@
+@use "../themes/" as *;
+
+.card {
+  .rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+
+  .rating:not(:checked) > label:before {
+    content: "★";
+  }
+
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+}
+
+.card {
+  width: 262px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 16px 16px;
+  border-radius: 8px;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .title-a {
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    padding: 4px 24px;
+    border-radius: 8px;
+    background: #4586d6;
+    color: $color-five;
+
+    /* Paragraph/Semibold/Label - 12px */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */
+  }
+
+  h4 {
+    padding-top: 27px;
+    color: $color-one;
+    font-variant-numeric: lining-nums proportional-nums;
+
+    /* Heading/Medium/H6 - 16px */
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+  }
+  p {
+    color: $color-four;
+
+    /* Paragraph/Semibold/Label - 12px */
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */
+    padding: 8px 0 12px;
+  }
+  strong {
+    color: $color-one;
+
+    /* Heading/Medium/H5 - 24px */
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+    padding-top: 16px;
+    del {
+      color: $color-six;
+      padding-right: 8px;
+      /* Paragraph/Reguler/Body - 16px */
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px; /* 168.75% */
+    }
+  }
+}
+
+.card:hover {
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.g_card {
+  width: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px 16px 0 16px;
+  transition: 0.4s;
+  border-radius: 8px;
+  img {
+    width: 100%;
+  }
+  .blog-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0;
+  }
+  h5 {
+    color: $color-one;
+    font-variant-numeric: lining-nums proportional-nums;
+
+    /* Heading/Bold/H5 - 24px */
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+  }
+  p {
+    color: $color-two;
+
+    /* Paragraph/Reguler/Body - 16px */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 168.75% */
+    padding: 16px 0 24px;
+  }
+  a {
+    color: $color-four;
+
+    /* Paragraph/Reguler/Body - 16px */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 168.75% */
+    padding-bottom: 16px;
+  }
+}
+
+.g_card:hover {
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.2);
+}
