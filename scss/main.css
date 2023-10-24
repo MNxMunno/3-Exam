@@ -450,34 +450,34 @@ header .nav_items .menu {
   line-height: 32px; /* 133.333% */
 }
 @media only screen and (max-width: 888px) {
-  .courses-about .about-content .a-content h5 {
+  .courses-about .courses_about-content .a-content h5 {
     font-size: 32px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .courses-about .about-content .a-content h5 {
+  .courses-about .courses_about-content .a-content h5 {
     font-size: 28px;
   }
 }
 @media only screen and (max-width: 555px) {
-  .courses-about .about-content .a-content h5 {
+  .courses-about .courses_about-content .a-content h5 {
     font-size: 22px;
   }
-  .courses-about .about-content .a-content a {
+  .courses-about .courses_about-content .a-content a {
     padding: 6px 28px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .courses-about .about-content .a-content {
+  .courses-about .courses_about-content .a-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
-  .courses-about .about-content .a-content h5 {
+  .courses-about .courses_about-content .a-content h5 {
     font-size: 18px;
   }
-  .courses-about .about-content .a-content a {
+  .courses-about .courses_about-content .a-content a {
     padding: 6px 28px;
   }
 }
