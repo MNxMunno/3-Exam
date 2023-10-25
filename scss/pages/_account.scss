@@ -145,6 +145,10 @@
     }
   }
   @media only screen and (max-width: 444px) {
+    body {
+      padding-top: 50px;
+    }
+
     .account-content {
       .account {
         img {

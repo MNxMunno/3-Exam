@@ -433,6 +433,9 @@ header .nav_items .menu {
   }
 }
 @media only screen and (max-width: 444px) {
+  .account-product body {
+    padding-top: 50px;
+  }
   .account-product .account-content .account img {
     height: 100px;
   }
@@ -446,7 +449,7 @@ header .nav_items .menu {
 }
 
 .courses-hero {
-  padding-top: 16px;
+  padding-top: 25px;
 }
 .courses-hero .courses-hero-content h1 {
   color: #1c3554;
@@ -802,6 +805,9 @@ header .nav_items .menu {
   box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.2);
 }
 
+.hero {
+  padding-top: 20px;
+}
 .hero .hero_cards {
   max-width: 1460px;
   background-color: #021934;
@@ -1397,7 +1403,7 @@ html {
 }
 
 body {
-  padding-top: 120px;
+  padding-top: 105px;
 }
 
 a {
