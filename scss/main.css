@@ -621,16 +621,126 @@ header .nav_items .menu {
 .courses-product {
   padding-bottom: 160px;
 }
+.courses-product .product-contents .cour-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: 56px;
+}
+.courses-product .product-contents .cour-title h6 {
+  color: #1c3554;
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Heading/Bold/H3 - 48px */
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px; /* 133.3% */
+}
+.courses-product .product-contents .cour-title .cour-btns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.courses-product .product-contents .cour-title .cour-btns a {
+  border-radius: 8px;
+  background: var(--primary-20-pink, #fff5f9);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  color: #f72585;
+  /* Paragraph/Semibold/Body - 16px */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 200% */
+  transition: 0.5s;
+}
+.courses-product .product-contents .cour-title .cour-btns svg {
+  fill: #f72585;
+}
+.courses-product .product-contents .cour-title .cour-btns a:hover {
+  color: #fff;
+  background-color: #f72585;
+}
+.courses-product .product-contents .cour-title .cour-btns a:hover svg {
+  fill: #fff;
+}
 .courses-product .product-contents .product-content {
   display: grid;
-  grid-template-columns: 4fr 8fr;
+  grid-template-columns: 3fr 9fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 .courses-product .product-contents .product-content .content-card1 {
-  background: #aaa;
   border-right: 1px solid #ccc;
+}
+.courses-product .product-contents .product-content .content-card1 .card1_cards .line {
+  width: 280px;
+  height: 1px;
+  background-color: #ccc;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+.courses-product .product-contents .product-content .content-card1 .card1_cards .card1_card {
+  padding-bottom: 32px;
+}
+.courses-product .product-contents .product-content .content-card1 .card1_cards .card1_card .card1_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 16px 0;
+}
+.courses-product .product-contents .product-content .content-card1 .card1_cards .card1_card .card1_title h6 {
+  color: #1c3554;
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Heading/Bold/H5 - 24px */
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+}
+.courses-product .product-contents .product-content .content-card1 .card1_cards .card1_card .last {
+  padding-top: 16px;
+}
+.courses-product .product-contents .product-content .content-card1 .card1_cards .card1_card .row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.courses-product .product-contents .product-content .content-card1 .card1_cards .card1_card .row label #checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #808080;
+}
+.courses-product .product-contents .product-content .content-card1 .card1_cards .card1_card .row p {
+  display: flex;
+  align-items: center;
+  color: #1c3554;
+  gap: 10px;
+  /* Paragraph/Semibold/Caption - 14px */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.courses-product .product-contents .product-content .content-card1 .card1_cards .card1_card .row p svg {
+  padding-right: 15px;
+}
+.courses-product .product-contents .product-content .content-card1 .card1_cards .card1_card .row b {
+  color: #808080;
+  /* Paragraph/Semibold/Caption - 14px */
+  font-family: Montserrat SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
 }
 .courses-product .product-contents .product-content .content-card {
   padding: 0 46px;
@@ -644,6 +754,38 @@ header .nav_items .menu {
 }
 .courses-product .product-contents .product-content .content-card .courses_product_cards .courses_product_card img {
   width: 100%;
+}
+@media only screen and (max-width: 888px) {
+  .courses-product .product-contents .cour-title h6 {
+    font-size: 28px;
+  }
+  .courses-product .product-contents .cour-title .cour-btns a {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 777px) {
+  .courses-product .product-contents .cour-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .courses-product .product-contents .cour-title .cour-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .courses-product .product-contents .product-content {
+    grid-template-columns: 1fr;
+  }
+  .courses-product .product-contents .product-content .content-card1 {
+    max-width: 369px;
+    margin: auto;
+    margin-bottom: 32px;
+  }
 }
 
 .card .rating:not(:checked) > input {

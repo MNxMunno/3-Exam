@@ -204,15 +204,136 @@
 .courses-product {
   padding-bottom: 160px;
   .product-contents {
+    .cour-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      padding-bottom: 56px;
+      h6 {
+        color: $color-one;
+        font-variant-numeric: lining-nums proportional-nums;
+
+        /* Heading/Bold/H3 - 48px */
+        font-family: Rubik;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 63.984px; /* 133.3% */
+      }
+      .cour-btns {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        a {
+          border-radius: 8px;
+          background: var(--primary-20-pink, #fff5f9);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 16px 40px;
+          color: $color-four;
+
+          /* Paragraph/Semibold/Body - 16px */
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px; /* 200% */
+          transition: 0.5s;
+        }
+        svg {
+          fill: $color-four;
+        }
+        a:hover {
+          color: $color-five;
+          background-color: $color-four;
+        }
+        a:hover svg {
+          fill: #fff;
+        }
+      }
+    }
     .product-content {
       display: grid;
-      grid-template-columns: 4fr 8fr;
+      grid-template-columns: 3fr 9fr;
       grid-template-rows: 1fr;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
       .content-card1 {
-        background: #aaa;
+        // background: #aaa;
         border-right: 1px solid $color-six;
+        .card1_cards {
+          .line {
+            width: 280px;
+            height: 1px;
+            background-color: $color-six;
+            margin-right: 20px;
+            margin-bottom: 16px;
+          }
+          .card1_card {
+            padding-bottom: 32px;
+            .card1_title {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 0 20px 16px 0;
+              h6 {
+                color: $color-one;
+                font-variant-numeric: lining-nums proportional-nums;
+
+                /* Heading/Bold/H5 - 24px */
+                font-family: Rubik;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px; /* 133.333% */
+              }
+            }
+            .last {
+              padding-top: 16px;
+            }
+            .row {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              label {
+                #checkbox {
+                  width: 24px;
+                  height: 24px;
+                  border: 2px solid $color-two;
+                }
+              }
+              p {
+                display: flex;
+                align-items: center;
+                color: $color-one;
+                gap: 10px;
+
+                /* Paragraph/Semibold/Caption - 14px */
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 171.429% */
+                svg {
+                  padding-right: 15px;
+                }
+              }
+              b {
+                color: $color-two;
+
+                /* Paragraph/Semibold/Caption - 14px */
+                font-family: Montserrat SemiBold;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 171.429% */
+              }
+            }
+          }
+        }
       }
       .content-card {
         padding: 0 46px;
@@ -227,6 +348,48 @@
               width: 100%;
             }
           }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 888px) {
+    .product-contents {
+      .cour-title {
+        h6 {
+          font-size: 28px;
+        }
+        .cour-btns {
+          a {
+            padding: 12px 28px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 777px) {
+    .product-contents {
+      .cour-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+        .cour-btns {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+      .product-content {
+        grid-template-columns: 1fr;
+        .content-card1 {
+          max-width: 369px;
+          margin: auto;
+          margin-bottom: 32px;
         }
       }
     }
