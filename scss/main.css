@@ -312,6 +312,77 @@ header .nav_items .menu {
   }
 }
 
+.head {
+  background: #989898;
+}
+
+.account-hero {
+  height: 320px;
+  opacity: 0.5;
+  background: var(--other-overlay-50, #000);
+}
+
+.account-product .account-content .account {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding-top: 48px;
+}
+.account-product .account-content .account .account_content h1 {
+  color: #1c3554;
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Heading/Bold/H4 - 32px */
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 150% */
+  text-transform: capitalize;
+  padding-bottom: 8px;
+}
+.account-product .account-content .account .account_content p {
+  color: #ccc;
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Heading/Medium/H6 - 16px */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+}
+.account-product .account-content .slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 270px 0;
+}
+.account-product .account-content .slide h2 {
+  color: #ccc;
+  /* Heading/Reguler/H4 - 32px */
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 150% */
+  cursor: pointer;
+  transition: 0.5s;
+}
+.account-product .account-content .slide h2:hover {
+  color: #000;
+  -webkit-text-decoration: 5px underline #f72585;
+          text-decoration: 5px underline #f72585;
+}
+.account-product .account-content .account_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 160px;
+}
+
 .courses-hero {
   padding-top: 16px;
 }

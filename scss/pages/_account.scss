@@ -1,0 +1,81 @@
+@use "../layout" as *;
+@use "../themes" as *;
+
+.head {
+  background: #989898;
+}
+
+.account-hero {
+  height: 320px;
+  opacity: 0.5;
+  background: var(--other-overlay-50, #000);
+}
+
+.account-product {
+  .account-content {
+    .account {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      padding-top: 48px;
+      .account_content {
+        h1 {
+          color: $color-one;
+          font-variant-numeric: lining-nums proportional-nums;
+
+          /* Heading/Bold/H4 - 32px */
+          font-family: Rubik;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 48px; /* 150% */
+          text-transform: capitalize;
+          padding-bottom: 8px;
+        }
+        p {
+          color: $color-six;
+          font-variant-numeric: lining-nums proportional-nums;
+
+          /* Heading/Medium/H6 - 16px */
+          font-family: Rubik;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 150% */
+          text-transform: capitalize;
+        }
+      }
+    }
+    .slide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 64px 270px 0;
+      h2 {
+        color: $color-six;
+
+        /* Heading/Reguler/H4 - 32px */
+        font-family: Rubik;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 48px; /* 150% */
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      h2:hover {
+        color: #000;
+        text-decoration: 5px underline $color-four;
+      }
+    }
+    .account_cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      padding-top: 40px;
+      padding-bottom: 160px;
+    }
+  }
+}
