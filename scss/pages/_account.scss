@@ -14,10 +14,14 @@
 .account-product {
   .account-content {
     .account {
+      height: 150px;
       display: flex;
       align-items: center;
       gap: 26px;
       padding-top: 48px;
+      img {
+        height: 100%;
+      }
       .account_content {
         h1 {
           color: $color-one;
@@ -76,6 +80,86 @@
       flex-wrap: wrap;
       padding-top: 40px;
       padding-bottom: 160px;
+    }
+  }
+  @media only screen and (max-width: 1144px) {
+    .account-content {
+      .slide {
+        padding: 64px 200px 0;
+        h2 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 999px) {
+    .account-content {
+      .slide {
+        padding: 64px 150px 0;
+        h2 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 777px) {
+    .account-content {
+      .account {
+        .account_content {
+          h1 {
+            font-size: 28px;
+          }
+        }
+      }
+      .slide {
+        padding: 64px 100px 0;
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 606px) {
+    .account-content {
+      .account {
+        .account_content {
+          h1 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+      .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding: 67px 0 0;
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 444px) {
+    .account-content {
+      .account {
+        img {
+          height: 100px;
+        }
+        .account_content {
+          h1 {
+            font-size: 18px;
+            line-height: 28px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
     }
   }
 }
