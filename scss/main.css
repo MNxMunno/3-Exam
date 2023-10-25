@@ -1170,6 +1170,9 @@ header .nav_items .menu {
     justify-content: center;
     flex-wrap: wrap;
   }
+  .hero .hero_cards .hero_card .hero-title-cards .hero-title-card {
+    padding: 26px 0 48px;
+  }
 }
 
 .about {
