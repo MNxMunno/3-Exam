@@ -235,6 +235,9 @@
   @media only screen and (max-width: 676px) {
     .hero_cards {
       .hero_card {
+        h1 {
+          font-size: 25px;
+        }
         form {
           display: none;
         }
