@@ -1154,7 +1154,7 @@ header .nav_items .menu {
 @media only screen and (max-width: 888px) {
   .hero .hero_cards .hero_card h1 {
     font-size: 32px;
-    line-height: 28px;
+    line-height: 58px;
   }
 }
 @media only screen and (max-width: 676px) {
