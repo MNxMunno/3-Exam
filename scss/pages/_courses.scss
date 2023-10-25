@@ -395,3 +395,17 @@
     }
   }
 }
+
+.backtop {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
