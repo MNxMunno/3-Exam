@@ -685,6 +685,7 @@ header .nav_items .menu {
   padding: 16px 16px;
   border-radius: 8px;
   position: relative;
+  transition: 0.4s;
 }
 .card img {
   width: 100%;
